@@ -1,481 +1,1122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <!-- =========================================
-       META
-  ========================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://formspree.io; frame-ancestors 'none'; base-uri 'self'; form-action https://formspree.io;">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorraine Rafols | WordPress, Shopify & Webflow Web Designer & Developer — Philippines</title>
+<meta name="description" content="Lorraine helps businesses turn website visitors into leads and sales through conversion-focused, SEO-optimized websites built in Wordpress, Shopify and Webflow.">
+<meta name="keywords" content="Webflow developer Philippines, WordPress developer Philippines, Shopify developer Philippines, Elementor expert Philippines, freelance web designer, custom website design, ecommerce development, Shopify development, liquid development, Wordpress development, Webflow development, SEO specialist Philippines, CRO specialist Philippines">
+<meta name="author" content="Lorraine Rafols">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://lorrainerafols.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lorrainerafols.com/">
+<meta property="og:title" content="Lorraine Rafols | WordPress, Shopify & Webflow Web Designer & Developer — Philippines">
+<meta property="og:description" content="Lorraine helps businesses turn website visitors into leads and sales through conversion-focused, SEO-optimized websites built in Wordpress, Shopify and Webflow.">
+<!-- <meta property="og:image" content="https://workwithraine.com/og-image.jpg"> -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_PH">
+<meta property="og:site_name" content="Lorraine Rafols">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lorraine Rafols | WordPress, Shopify & Webflow Web Designer & Developer — Philippines">
+<meta name="twitter:description" content="Lorraine helps businesses turn website visitors into leads and sales through conversion-focused, SEO-optimized websites built in Wordpress, Shopify and Webflow.">
+<!-- <meta name="twitter:image" content="https://workwithraine.com/og-image.jpg"> -->
 
-  <title>Modern Contractor Landing Page</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lorrainerafols.com/#person",
+      "name": "Lorraine Rafols",
+      "url": "https://lorrainerafols.com/",
+      "email": "workwithraine@gmail.com",
+      "description": "Lorraine helps businesses turn website visitors into leads and sales through conversion-focused, SEO-optimized websites built in Wordpress, Shopify and Webflow.",
+      "jobTitle": "Web Designer & Developer",
+      "knowsAbout": ["Webflow","WordPress","Shopify","Web Design","E-Commerce","UI/UX Design","Liquid","Bricks","Elementor","SEO","CRO"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PH"
+      },
+      "areaServed": "Worldwide",
+      "availableLanguage": "English"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lorrainerafols.com/#website",
+      "url": "https://lorrainerafols.com/",
+      "name": "Lorraine Rafols",
+      "description": "Portfolio of Lorraine Rafols — freelance WordPress, Shopify & Webflow web designer and developer based in Philippines.",
+      "author": { "@id": "https://lorrainerafols.com/#person" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://lorrainerafols.com/#service",
+      "name": "Lorraine Rafols — Web Design & Development",
+      "url": "https://lorrainerafols.com/",
+      "description": "Helping businesses turn website visitors into leads and sales through custom conversion-focused, SEO-optimized website design and development on WordPress, Shopify and Webflow.",
+      "provider": { "@id": "https://lorrainerafols.com/#person" },
+      "serviceType": ["Web Design","Web Development","E-Commerce Development","Shopify Development","WordPress Development","Webflow Development"],
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "workwithraine@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      }
+    }
+  ]
+}
+</script>
 
-  <meta
-    name="description"
-    content="Premium remodeling and home improvement services designed to help homeowners confidently start their next project."
-  />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Modern Contractor Landing Page" />
-  <meta
-    property="og:description"
-    content="Premium remodeling and home improvement services."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/og-image.jpg" />
+<style>
+/* ACCESSIBILITY: Respect OS reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none !important; }
+}
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Theme -->
-  <meta name="theme-color" content="#0f172a" />
+:root {
+  --cream: #F5F0E8;
+  --ink: #1A1714;
+  --ink-soft: #4A4540;
+  --terra: #B85A27;         /* Darkened slightly for WCAG AA contrast on cream */
+  --terra-light: #D97B4F;
+  --sand: #E8E0D0;
+  --white: #FDFCFA;
+  --border: rgba(26,23,20,0.12);
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body: 'DM Sans', sans-serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
 
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+/* ACCESSIBILITY: Keyboard focus ring — visible, high-contrast */
+:focus-visible {
+  outline: 3px solid #005FCC;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
 
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+/* ACCESSIBILITY: Skip-to-content link */
+.skip-link {
+  position: absolute; top: -100px; left: 16px;
+  background: var(--ink); color: var(--cream);
+  padding: 10px 20px; font-size: 0.9rem;
+  z-index: 10000; text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 16px; }
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+/* ACCESSIBILITY: Screen-reader-only utility */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--ff-body);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Cursor: fine pointer (desktop) only */
+@media (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+  a, button, .card { cursor: pointer; }
+}
+@media (pointer: fine) {
+  a, button, .tab-btn, .card { cursor: none; }
+}
+
+.cursor { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; }
+.cursor-dot {
+  width: 8px; height: 8px; background: var(--terra);
+  border-radius: 50%; transform: translate(-50%,-50%);
+}
+.cursor-ring {
+  position: fixed; top: 0; left: 0; width: 36px; height: 36px;
+  border: 1.5px solid var(--terra); border-radius: 50%;
+  transform: translate(-50%,-50%);
+  transition: transform 0.25s var(--ease-out), width 0.3s, height 0.3s, opacity 0.3s;
+  pointer-events: none; z-index: 9998;
+}
+.cursor-ring.hover { width: 56px; height: 56px; opacity: 0.6; }
+
+/* ── Nav ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px 60px;
+  transition: background 0.4s, padding 0.4s;
+}
+nav.scrolled {
+  background: rgba(245,240,232,0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 16px 60px;
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo {
+  font-family: var(--ff-display); font-size: 1.3rem; font-weight: 700;
+  color: var(--ink); text-decoration: none; letter-spacing: -0.01em;
+}
+.nav-logo span { color: var(--terra); }
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a {
+  text-decoration: none; color: var(--ink-soft);
+  font-size: 0.875rem; font-weight: 400;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  position: relative; transition: color 0.2s;
+  padding: 6px 0;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -3px; left: 0;
+  width: 0; height: 1.5px; background: var(--terra);
+  transition: width 0.3s var(--ease-out);
+}
+.nav-links a:hover { color: var(--terra); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-toggle {
+  display: none; background: none; border: none;
+  width: 44px; height: 44px;
+  flex-direction: column; justify-content: center;
+  align-items: center; gap: 6px; padding: 8px;
+}
+.nav-toggle span {
+  display: block; height: 1.5px; width: 22px;
+  background: var(--ink); transition: transform 0.3s, opacity 0.3s;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+/* ── Hero ── */
+#hero {
+  min-height: 100vh;
+  display: grid; grid-template-columns: 1fr 1fr;
+  padding-top: 80px; position: relative; overflow: hidden;
+}
+#hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 75% 40%, rgba(196,98,45,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-left {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 80px 60px; position: relative;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--terra); font-weight: 500; margin-bottom: 28px;
+  opacity: 0; transform: translateY(16px);
+  animation: fadeUp 0.7s var(--ease-out) 0.2s forwards;
+}
+.hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--terra); }
+.hero-headline {
+  font-family: var(--ff-display);
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  line-height: 1.05; letter-spacing: -0.02em; font-weight: 700; color: var(--ink);
+  margin-bottom: 28px;
+  opacity: 0; transform: translateY(20px);
+  animation: fadeUp 0.8s var(--ease-out) 0.35s forwards;
+}
+.hero-headline em { font-style: italic; color: var(--terra); }
+.hero-sub {
+  font-size: 1.05rem; color: var(--ink-soft); max-width: 420px;
+  line-height: 1.75; margin-bottom: 48px;
+  opacity: 0; transform: translateY(16px);
+  animation: fadeUp 0.7s var(--ease-out) 0.5s forwards;
+}
+.hero-actions {
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+  opacity: 0; transform: translateY(16px);
+  animation: fadeUp 0.7s var(--ease-out) 0.65s forwards;
+}
+.btn-primary {
+  background: var(--ink); color: var(--cream);
+  padding: 15px 32px; border: none; text-decoration: none;
+  font-family: var(--ff-body); font-size: 0.875rem; font-weight: 500;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  position: relative; overflow: hidden; display: inline-block;
+  min-height: 44px; /* ACCESSIBILITY: min touch target */
+}
+.btn-primary::after {
+  content: ''; position: absolute; inset: 0;
+  background: var(--terra); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+.btn-primary:hover::after { transform: scaleX(1); }
+.btn-primary span { position: relative; z-index: 1; }
+.btn-ghost {
+  color: var(--ink); font-size: 0.875rem; font-weight: 400;
+  text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 8px; min-height: 44px;
+  transition: gap 0.3s, color 0.2s;
+}
+.btn-ghost:hover { gap: 14px; color: var(--terra); }
+.btn-ghost::after { content: '→'; }
+.hero-stats {
+  display: flex; gap: 40px; margin-top: 64px;
+  padding-top: 40px; border-top: 1px solid var(--border);
+  opacity: 0; transform: translateY(12px);
+  animation: fadeUp 0.7s var(--ease-out) 0.8s forwards;
+}
+.stat-num { font-family: var(--ff-display); font-size: 2rem; font-weight: 700; color: var(--ink); line-height: 1; }
+.stat-label { font-size: 0.75rem; color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 4px; }
+.hero-right {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  padding: 80px 60px 80px 20px;
+  opacity: 0; animation: fadeIn 1s var(--ease-out) 0.4s forwards;
+}
+.hero-visual { width: 100%; max-width: 460px; aspect-ratio: 4/5; position: relative; }
+.hero-img-frame { position: absolute; inset: 0; background: var(--sand); overflow: hidden; }
+.hero-img-frame::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, transparent 60%, rgba(196,98,45,0.15) 100%);
+}
+.hero-grid-overlay {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(26,23,20,0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(26,23,20,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.hero-tag {
+  position: absolute; background: var(--white); border: 1px solid var(--border);
+  padding: 12px 20px; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.02em;
+}
+.hero-tag.t1 { bottom: -20px; left: -30px; }
+.hero-tag.t2 { top: 30px; right: -30px; }
+.hero-tag .dot { display: inline-block; width: 6px; height: 6px; background: var(--terra); border-radius: 50%; margin-right: 8px; }
+.hero-abstract { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-abstract svg { width: 80%; height: 80%; opacity: 0.7; }
+
+/* ── Marquee ── */
+.marquee-wrap { background: var(--terra); overflow: hidden; padding: 16px 0; display: flex; }
+.marquee-track { display: flex; animation: marquee 22s linear infinite; white-space: nowrap; flex-shrink: 0; }
+.marquee-wrap:hover .marquee-track,
+.marquee-wrap:focus-within .marquee-track { animation-play-state: paused; }
+.marquee-item {
+  font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--cream); opacity: 0.9;
+  padding: 0 32px; display: flex; align-items: center; gap: 32px;
+}
+.marquee-item::after { content: '✦'; font-size: 0.6rem; opacity: 0.6; }
+
+/* ── Sections ── */
+section { padding: 100px 60px; }
+.section-label {
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--terra); font-weight: 500; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--terra); flex-shrink: 0; }
+.section-title {
+  font-family: var(--ff-display); font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; margin-bottom: 20px;
+}
+
+/* ── Work / Portfolio ── */
+#work { background: var(--white); }
+.work-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 60px; }
+.work-header-left { max-width: 480px; }
+.work-sub { color: var(--ink-soft); font-size: 1rem; line-height: 1.7; }
+.tabs { display: flex; gap: 4px; background: var(--sand); padding: 5px; align-self: flex-end; }
+.tab-btn {
+  background: transparent; border: none;
+  padding: 11px 22px; font-family: var(--ff-body);
+  font-size: 0.8rem; font-weight: 500;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--ink-soft); transition: all 0.25s; min-height: 44px;
+}
+.tab-btn.active, .tab-btn[aria-selected="true"] { background: var(--ink); color: var(--cream); }
+.tab-btn:not(.active):hover { color: var(--terra); }
+.projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+
+/* Card */
+.card {
+  background: var(--cream); border: 1px solid var(--border);
+  overflow: hidden; position: relative;
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s;
+}
+.card[data-cat] { display: none; }
+.card.show { display: block; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(26,23,20,0.1); }
+.card-thumb { aspect-ratio: 4/3; overflow: hidden; position: relative; background: var(--sand); }
+.card-thumb-inner {
+  width: 100%; height: 100%;
+  transition: transform 0.6s var(--ease-out);
+  display: flex; align-items: center; justify-content: center;
+}
+.card:hover .card-thumb-inner { transform: scale(1.04); }
+.card-thumb-inner svg { width: 60%; height: 60%; opacity: 0.35; }
+.card-thumb-overlay {
+  position: absolute; inset: 0; background: rgba(26,23,20,0.5);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity 0.3s;
+}
+.card:hover .card-thumb-overlay,
+.card:focus-within .card-thumb-overlay { opacity: 1; }
+.card-thumb-overlay span {
+  color: var(--cream); font-size: 0.75rem; letter-spacing: 0.1em;
+  text-transform: uppercase; font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.4); padding: 8px 20px;
+}
+.card-body { padding: 24px 24px 28px; }
+.card-platform {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+  font-weight: 600; color: var(--terra); margin-bottom: 10px;
+}
+.card-platform-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--terra); }
+.card-title { font-family: var(--ff-display); font-size: 1.2rem; font-weight: 700; line-height: 1.25; margin-bottom: 8px; }
+.card-desc { font-size: 0.875rem; color: var(--ink-soft); line-height: 1.65; }
+.card-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; list-style: none; }
+.tag { font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; background: var(--sand); color: var(--ink-soft); font-weight: 500; }
+
+/* ── About ── */
+#about { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-visual { position: relative; aspect-ratio: 3/4; background: var(--sand); overflow: hidden; }
+.about-visual::before { content: ''; position: absolute; top:-1px; left:-1px; right:-1px; bottom:-1px; border: 1px solid var(--border); z-index: 1; }
+.about-stripe { position: absolute; bottom: 0; left: 0; right: 0; height: 30%; background: var(--terra); opacity: 0.08; }
+.about-initials {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-display); font-size: 10rem; font-weight: 700;
+  color: rgba(26,23,20,0.06); letter-spacing: -0.05em; user-select: none;
+}
+.about-badge {
+  position: absolute; bottom: 30px; right: -20px;
+  background: var(--terra); color: var(--cream);
+  padding: 16px 20px; font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.5; z-index: 2;
+}
+.about-body { color: var(--ink-soft); font-size: 1rem; line-height: 1.8; margin-bottom: 24px; }
+.skills-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 32px; list-style: none; }
+.skill-item { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-soft); }
+.skill-item::before { content: ''; width: 14px; height: 1px; background: var(--terra); flex-shrink: 0; }
+
+/* ── Contact ── */
+#contact {
+  background: var(--ink); color: var(--cream);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+}
+#contact .section-label { color: var(--terra-light); }
+#contact .section-label::before { background: var(--terra-light); }
+#contact .section-title { color: var(--cream); }
+.contact-sub { color: rgba(245,240,232,0.6); font-size: 1rem; line-height: 1.7; margin-bottom: 40px; }
+.contact-detail { display: flex; gap: 16px; margin-bottom: 20px; align-items: center; }
+.contact-detail-icon { width: 44px; height: 44px; border: 1px solid rgba(245,240,232,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; }
+.contact-detail-text { font-size: 0.9rem; color: rgba(245,240,232,0.7); }
+.contact-detail-text strong { display: block; color: var(--cream); font-weight: 500; margin-bottom: 2px; }
+
+/* Form */
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.required-note { font-size: 0.75rem; color: rgba(245,240,232,0.4); margin-bottom: 4px; }
+abbr[title] { text-decoration: none; color: var(--terra-light); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,240,232,0.55); font-weight: 500; }
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: rgba(245,240,232,0.06); border: 1px solid rgba(245,240,232,0.14);
+  color: var(--cream); font-family: var(--ff-body); font-size: 0.95rem;
+  padding: 14px 18px; outline: none;
+  transition: border-color 0.25s, background 0.25s;
+  width: 100%; -webkit-appearance: none; min-height: 44px;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(245,240,232,0.25); }
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--terra-light);
+  background: rgba(245,240,232,0.09);
+  outline: 2px solid var(--terra-light); outline-offset: 2px;
+}
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] { border-color: #e07070; }
+.form-group textarea { resize: vertical; min-height: 130px; }
+.form-group select option { background: var(--ink); }
+/* SECURITY: Honeypot — invisible to humans, fills itself for bots */
+.hp-field { display: none !important; }
+.char-counter { font-size: 0.7rem; color: rgba(245,240,232,0.35); text-align: right; margin-top: -8px; }
+.btn-submit {
+  background: var(--terra); color: var(--cream); border: none;
+  padding: 16px 36px; font-family: var(--ff-body); font-size: 0.875rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  align-self: flex-start; transition: background 0.3s; min-height: 44px;
+}
+.btn-submit:hover:not(:disabled) { background: var(--terra-light); }
+.btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+.form-status { font-size: 0.875rem; padding: 14px 18px; display: none; }
+.form-status.success { background: rgba(196,98,45,0.15); color: #e8a07a; display: block; border-left: 3px solid var(--terra-light); }
+.form-status.error { background: rgba(255,80,80,0.1); color: #ff8888; display: block; border-left: 3px solid #ff8888; }
+.privacy-note { font-size: 0.75rem; color: rgba(245,240,232,0.35); line-height: 1.65; }
+.privacy-note a { color: rgba(245,240,232,0.5); }
+.privacy-note a:hover { color: var(--terra-light); }
+
+/* ── Footer ── */
+footer {
+  background: var(--ink); border-top: 1px solid rgba(245,240,232,0.06);
+  padding: 30px 60px; display: flex; align-items: center;
+  justify-content: space-between; color: rgba(245,240,232,0.4);
+  font-size: 0.8rem; flex-wrap: wrap; gap: 16px;
+}
+footer .logo { font-family: var(--ff-display); font-weight: 700; color: var(--cream); font-size: 1rem; }
+footer .logo span { color: var(--terra); }
+.footer-links { display: flex; gap: 24px; list-style: none; }
+.footer-links a { color: rgba(245,240,232,0.4); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; padding: 8px 0; }
+.footer-links a:hover { color: var(--terra); }
+
+/* ── Scroll reveal ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ── Animations ── */
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  nav { padding: 18px 24px; }
+  nav.scrolled { padding: 14px 24px; }
+  .nav-links {
+    display: none; flex-direction: column; gap: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: rgba(245,240,232,0.97); backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border); padding: 12px 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: block; padding: 14px 24px; font-size: 1rem; color: var(--ink); }
+  .nav-toggle { display: flex; }
+  #hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 110px 24px 48px; }
+  .hero-right { display: none; }
+  section { padding: 64px 24px; }
+  #work { padding: 64px 24px; }
+  .work-header { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .projects-grid { grid-template-columns: 1fr; }
+  #about { grid-template-columns: 1fr; gap: 40px; }
+  .about-badge { right: 0; }
+  #contact { grid-template-columns: 1fr; gap: 48px; padding: 64px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  footer { padding: 24px; }
+}
+</style>
 </head>
-
 <body>
 
-  <!-- =========================================
-       SKIP LINK
-  ========================================== -->
-  <a class="skip-link" href="#main-content">
-    Skip to content
-  </a>
+<!-- ACCESSIBILITY: Skip link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- =========================================
-       HEADER
-  ========================================== -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
+<!-- Custom cursor (desktop only) -->
+<div class="cursor" id="cursorDot" aria-hidden="true"><div class="cursor-dot"></div></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-      <a href="#" class="logo" aria-label="Homepage">
-        Northstar Remodel
-      </a>
+<!-- ── Navigation ── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-logo" aria-label="Raine — back to top">raine<span aria-hidden="true">.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navMenu" role="list">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-      <nav class="nav" aria-label="Primary Navigation">
-        <button
-          class="mobile-nav-toggle"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          ☰
-        </button>
+<main id="main-content">
 
-        <ul class="nav-list" id="mobile-menu">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li>
-            <a href="#contact" class="btn btn-primary">
-              Book Consultation
-            </a>
-          </li>
-        </ul>
-      </nav>
-
+<!-- ── Hero ── -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Web Design &amp; Development</p>
+    <h1 class="hero-headline" id="hero-heading">
+      Building <em>beautiful</em><br>digital experiences
+    </h1>
+    <p class="hero-sub">
+      I design and develop custom websites on WordPress, Webflow, and Shopify — crafted for clarity, conversion, and character.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary"><span>View My Work</span></a>
+      <a href="#contact" class="btn-ghost">Let's Talk</a>
     </div>
-  </header>
-
-  <!-- =========================================
-       MAIN
-  ========================================== -->
-  <main id="main-content">
-
-    <!-- =========================================
-         HERO
-    ========================================== -->
-    <section class="hero section">
-      <div class="container hero-grid">
-
-        <div class="hero-content reveal">
-          <p class="eyebrow">
-            Premium Home Remodeling
-          </p>
-
-          <h1>
-            Remodel Your Home With a Team You Can Trust
-          </h1>
-
-          <p class="hero-text">
-            We help homeowners confidently start high-quality renovation
-            projects with clear communication, transparent pricing,
-            and modern craftsmanship.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">
-              Get Free Estimate
-            </a>
-
-            <a href="#services" class="btn btn-secondary">
-              Explore Services
-            </a>
-          </div>
-
-          <ul class="hero-proof">
-            <li>✔ Licensed & Insured</li>
-            <li>✔ 5-Star Reviews</li>
-            <li>✔ Transparent Pricing</li>
-          </ul>
-        </div>
-
-        <div class="hero-media reveal">
-          <img
-            src="images/hero.jpg"
-            alt="Modern remodeled kitchen interior"
-            width="1200"
-            height="900"
-            loading="eager"
-            decoding="async"
-          />
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================
-         SOCIAL PROOF
-    ========================================== -->
-    <section class="social-proof section-sm">
-      <div class="container">
-
-        <p class="social-proof-title">
-          Trusted by homeowners across the region
-        </p>
-
-        <div class="logo-grid">
-          <div class="logo-card">Houzz</div>
-          <div class="logo-card">Google</div>
-          <div class="logo-card">HomeAdvisor</div>
-          <div class="logo-card">Yelp</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================
-         SERVICES
-    ========================================== -->
-    <section class="services section" id="services">
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <p class="eyebrow">Services</p>
-          <h2>Built for Modern Homeowners</h2>
-        </div>
-
-        <div class="card-grid">
-
-          <article class="service-card reveal">
-            <h3>Kitchen Remodeling</h3>
-            <p>
-              Modern layouts, cabinetry, finishes, and functional upgrades.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <h3>Bathroom Renovation</h3>
-            <p>
-              High-quality bathroom transformations focused on comfort and value.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <h3>Interior Upgrades</h3>
-            <p>
-              Flooring, drywall, painting, trim, and modern finishing work.
-            </p>
-          </article>
-
+    <dl class="hero-stats" aria-label="Key statistics">
+      <div><dt class="stat-num">50+</dt><dd class="stat-label">Projects Delivered</dd></div>
+      <div><dt class="stat-num">3</dt><dd class="stat-label">Platforms</dd></div>
+      <div><dt class="stat-num">100%</dt><dd class="stat-label">Client Satisfaction</dd></div>
+    </dl>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-abstract">
+          <svg viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Decorative web design mockup illustration">
+            <rect x="30" y="30" width="240" height="160" fill="none" stroke="rgba(26,23,20,0.15)" stroke-width="1"/>
+            <rect x="30" y="30" width="240" height="22" fill="rgba(196,98,45,0.18)"/>
+            <circle cx="42" cy="41" r="4" fill="rgba(196,98,45,0.5)"/><circle cx="56" cy="41" r="4" fill="rgba(196,98,45,0.3)"/><circle cx="70" cy="41" r="4" fill="rgba(26,23,20,0.1)"/>
+            <rect x="46" y="68" width="80" height="6" rx="3" fill="rgba(26,23,20,0.12)"/>
+            <rect x="46" y="82" width="130" height="4" rx="2" fill="rgba(26,23,20,0.07)"/>
+            <rect x="46" y="94" width="110" height="4" rx="2" fill="rgba(26,23,20,0.07)"/>
+            <rect x="46" y="114" width="60" height="24" fill="rgba(196,98,45,0.25)"/><rect x="46" y="114" width="60" height="24" stroke="rgba(196,98,45,0.4)" stroke-width="1" fill="none"/>
+            <rect x="30" y="210" width="112" height="140" fill="none" stroke="rgba(26,23,20,0.12)" stroke-width="1"/>
+            <rect x="30" y="210" width="112" height="70" fill="rgba(26,23,20,0.04)"/>
+            <rect x="40" y="292" width="60" height="5" rx="2" fill="rgba(26,23,20,0.1)"/>
+            <rect x="40" y="305" width="80" height="4" rx="2" fill="rgba(26,23,20,0.06)"/>
+            <rect x="158" y="210" width="112" height="140" fill="none" stroke="rgba(26,23,20,0.12)" stroke-width="1"/>
+            <rect x="158" y="210" width="112" height="70" fill="rgba(196,98,45,0.06)"/>
+            <rect x="168" y="292" width="60" height="5" rx="2" fill="rgba(26,23,20,0.1)"/>
+            <rect x="168" y="305" width="80" height="4" rx="2" fill="rgba(26,23,20,0.06)"/>
+            <line x1="30" y1="200" x2="270" y2="200" stroke="rgba(26,23,20,0.08)" stroke-width="1"/>
+          </svg>
         </div>
       </div>
-    </section>
-
-    <!-- =========================================
-         PROCESS
-    ========================================== -->
-    <section class="process section" id="process">
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <p class="eyebrow">Our Process</p>
-          <h2>Simple, Transparent, Professional</h2>
-        </div>
-
-        <div class="timeline">
-
-          <div class="timeline-item reveal">
-            <span>01</span>
-            <h3>Consultation</h3>
-            <p>We understand your project goals and budget.</p>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span>02</span>
-            <h3>Planning</h3>
-            <p>Clear timelines, transparent pricing, and scope alignment.</p>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span>03</span>
-            <h3>Build</h3>
-            <p>Professional execution with ongoing communication.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================
-         RESULTS
-    ========================================== -->
-    <section class="results section" id="results">
-      <div class="container">
-
-        <div class="results-grid">
-
-          <div class="results-content reveal">
-            <p class="eyebrow">Why Homeowners Choose Us</p>
-
-            <h2>
-              A Better Remodeling Experience From Start to Finish
-            </h2>
-
-            <ul class="benefits-list">
-              <li>Clear project communication</li>
-              <li>Premium craftsmanship</li>
-              <li>Reliable timelines</li>
-              <li>Modern design guidance</li>
-              <li>Clean professional crews</li>
-            </ul>
-          </div>
-
-          <div class="stats-grid reveal">
-            <div class="stat-card">
-              <strong>250+</strong>
-              <span>Projects Completed</span>
-            </div>
-
-            <div class="stat-card">
-              <strong>98%</strong>
-              <span>Client Satisfaction</span>
-            </div>
-
-            <div class="stat-card">
-              <strong>12+</strong>
-              <span>Years Experience</span>
-            </div>
-
-            <div class="stat-card">
-              <strong>5★</strong>
-              <span>Average Reviews</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================
-         TESTIMONIALS
-    ========================================== -->
-    <section class="testimonials section">
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <p class="eyebrow">Testimonials</p>
-          <h2>What Clients Say</h2>
-        </div>
-
-        <div class="card-grid">
-
-          <blockquote class="testimonial-card reveal">
-            <p>
-              “Professional, transparent, and the quality exceeded expectations.”
-            </p>
-            <footer>— Sarah M.</footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card reveal">
-            <p>
-              “The communication throughout the project was excellent.”
-            </p>
-            <footer>— Daniel R.</footer>
-          </blockquote>
-
-          <blockquote class="testimonial-card reveal">
-            <p>
-              “Our remodel finally feels premium and modern.”
-            </p>
-            <footer>— Jessica T.</footer>
-          </blockquote>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================
-         FAQ
-    ========================================== -->
-    <section class="faq section" id="faq">
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <p class="eyebrow">FAQ</p>
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <div class="faq-list">
-
-          <details class="faq-item reveal">
-            <summary>How long do projects take?</summary>
-            <p>
-              Timelines depend on project scope, but we provide clear scheduling upfront.
-            </p>
-          </details>
-
-          <details class="faq-item reveal">
-            <summary>Do you offer financing?</summary>
-            <p>
-              Yes. Financing options are available for qualified homeowners.
-            </p>
-          </details>
-
-          <details class="faq-item reveal">
-            <summary>Are estimates free?</summary>
-            <p>
-              Yes. We provide complimentary consultations and estimates.
-            </p>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================
-         CONTACT
-    ========================================== -->
-    <section class="contact section" id="contact">
-      <div class="container contact-grid">
-
-        <div class="contact-content reveal">
-          <p class="eyebrow">Get Started</p>
-
-          <h2>
-            Start Your Remodeling Project Today
-          </h2>
-
-          <p>
-            Tell us about your project and we’ll reach out within 1 business day.
-          </p>
-        </div>
-
-        <form
-          class="contact-form reveal"
-          name="consultation"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-
-          <input type="hidden" name="form-name" value="consultation" />
-
-          <p hidden>
-            <label>
-              Don’t fill this out:
-              <input name="bot-field" />
-            </label>
-          </p>
-
-          <div class="form-group">
-            <label for="name">Full Name</label>
-
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              autocomplete="name"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              autocomplete="email"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Project Details</label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
-            Request Consultation
-          </button>
-
-          <p
-            class="form-status"
-            aria-live="polite"
-          ></p>
-
-        </form>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- =========================================
-       FOOTER
-  ========================================== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-
-      <p>
-        © 2026 Northstar Remodel. All rights reserved.
-      </p>
-
-      <a href="#top">
-        Back to top
-      </a>
-
+      <div class="hero-tag t1"><span class="dot"></span>Shopify Expert</div>
+      <div class="hero-tag t2"><span class="dot"></span>Webflow Certified</div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Mobile Sticky CTA -->
-  <div class="mobile-cta">
-    <a href="#contact" class="btn btn-primary">
-      Free Estimate
-    </a>
+<!-- Marquee — decorative, hidden from assistive tech -->
+<div class="marquee-wrap" aria-hidden="true" role="presentation">
+  <div class="marquee-track">
+    <span class="marquee-item">WordPress Development</span><span class="marquee-item">Webflow Design</span><span class="marquee-item">Shopify Stores</span><span class="marquee-item">Custom Animations</span><span class="marquee-item">E-Commerce Solutions</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">CMS Integration</span><span class="marquee-item">Responsive Layouts</span><span class="marquee-item">WordPress Development</span><span class="marquee-item">Webflow Design</span><span class="marquee-item">Shopify Stores</span><span class="marquee-item">Custom Animations</span><span class="marquee-item">E-Commerce Solutions</span><span class="marquee-item">UI / UX Design</span><span class="marquee-item">CMS Integration</span><span class="marquee-item">Responsive Layouts</span>
+  </div>
+</div>
+
+<!-- ── Portfolio ── -->
+<section id="work" aria-labelledby="work-heading">
+  <div class="work-header reveal">
+    <div class="work-header-left">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title" id="work-heading">Selected Work</h2>
+      <p class="work-sub">A curated collection of projects across platforms — each built with intention and attention to detail.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Filter projects by platform">
+      <button class="tab-btn active" role="tab" data-tab="all" aria-selected="true" aria-controls="projectsGrid">All</button>
+      <button class="tab-btn" role="tab" data-tab="webflow" aria-selected="false" aria-controls="projectsGrid">Webflow</button>
+      <button class="tab-btn" role="tab" data-tab="wordpress" aria-selected="false" aria-controls="projectsGrid">WordPress</button>
+      <button class="tab-btn" role="tab" data-tab="shopify" aria-selected="false" aria-controls="projectsGrid">Shopify</button>
+    </div>
+  </div>
+  <!-- ACCESSIBILITY: screen reader live region announces filter changes -->
+  <div id="gridAnnouncer" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+
+  <div class="projects-grid" id="projectsGrid" role="list">
+    <!-- WEBFLOW -->
+    <article class="card show" data-cat="webflow" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="20" y="20" width="160" height="120" stroke="rgba(26,23,20,0.2)" stroke-width="1.5"/><rect x="20" y="20" width="160" height="50" fill="rgba(196,98,45,0.1)"/><rect x="35" y="35" width="70" height="8" rx="2" fill="rgba(26,23,20,0.18)"/><rect x="35" y="50" width="100" height="4" rx="2" fill="rgba(26,23,20,0.08)"/><rect x="35" y="90" width="60" height="40" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/><rect x="110" y="90" width="60" height="40" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.2)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Webflow</p>
+        <h3 class="card-title" itemprop="name">Lumina Studio Agency Site</h3>
+        <p class="card-desc" itemprop="description">A multi-page agency site with CMS-driven case studies, smooth scroll interactions, and a dynamic team section.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">CMS</li><li class="tag">Animations</li><li class="tag">Responsive</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="webflow" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><circle cx="100" cy="80" r="50" stroke="rgba(26,23,20,0.15)" stroke-width="1.5"/><circle cx="100" cy="80" r="30" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.2)" stroke-width="1"/><line x1="20" y1="80" x2="180" y2="80" stroke="rgba(26,23,20,0.1)" stroke-width="1" stroke-dasharray="4 4"/><line x1="100" y1="20" x2="100" y2="140" stroke="rgba(26,23,20,0.1)" stroke-width="1" stroke-dasharray="4 4"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Webflow</p>
+        <h3 class="card-title" itemprop="name">Orion Consulting Landing Page</h3>
+        <p class="card-desc" itemprop="description">High-converting landing page with Lottie animations, form integrations, and A/B tested hero sections.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Landing Page</li><li class="tag">Lottie</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="webflow" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="15" y="25" width="170" height="110" rx="2" stroke="rgba(26,23,20,0.15)" stroke-width="1.5"/><rect x="15" y="25" width="170" height="18" fill="rgba(26,23,20,0.06)"/><rect x="30" y="55" width="65" height="65" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.18)" stroke-width="1"/><rect x="110" y="55" width="60" height="10" rx="2" fill="rgba(26,23,20,0.1)"/><rect x="110" y="73" width="45" height="6" rx="2" fill="rgba(26,23,20,0.06)"/><rect x="110" y="87" width="50" height="6" rx="2" fill="rgba(26,23,20,0.06)"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Webflow</p>
+        <h3 class="card-title" itemprop="name">Folio — Photographer Portfolio</h3>
+        <p class="card-desc" itemprop="description">A clean, image-first portfolio with masonry gallery, lightbox, and category filtering built in Webflow.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Portfolio</li><li class="tag">Gallery</li></ul>
+      </div>
+    </article>
+    <!-- WORDPRESS -->
+    <article class="card show" data-cat="wordpress" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="20" y="20" width="100" height="120" stroke="rgba(26,23,20,0.15)" stroke-width="1.5"/><rect x="20" y="20" width="100" height="12" fill="rgba(26,23,20,0.06)"/><rect x="30" y="44" width="80" height="6" rx="2" fill="rgba(26,23,20,0.1)"/><rect x="30" y="56" width="65" height="4" rx="2" fill="rgba(26,23,20,0.06)"/><rect x="30" y="66" width="70" height="4" rx="2" fill="rgba(26,23,20,0.06)"/><rect x="130" y="20" width="50" height="60" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.18)" stroke-width="1"/><rect x="130" y="90" width="50" height="50" fill="rgba(26,23,20,0.04)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>WordPress</p>
+        <h3 class="card-title" itemprop="name">Verdant Wellness Blog</h3>
+        <p class="card-desc" itemprop="description">Content-rich wellness blog with custom Gutenberg blocks, membership features, and newsletter integrations.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Blog</li><li class="tag">Gutenberg</li><li class="tag">Membership</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="wordpress" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="20" y="30" width="160" height="100" stroke="rgba(26,23,20,0.15)" stroke-width="1.5"/><rect x="35" y="45" width="130" height="30" fill="rgba(196,98,45,0.07)" stroke="rgba(196,98,45,0.15)" stroke-width="1"/><rect x="35" y="85" width="55" height="30" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/><rect x="100" y="85" width="65" height="30" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>WordPress</p>
+        <h3 class="card-title" itemprop="name">Nexus Real Estate Platform</h3>
+        <p class="card-desc" itemprop="description">Custom property listing site with advanced search, map integration, and agent dashboard built on WordPress + ACF.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">ACF</li><li class="tag">Custom Post Types</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="wordpress" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="25" y="20" width="150" height="120" stroke="rgba(26,23,20,0.12)" stroke-width="1.5"/><rect x="25" y="20" width="150" height="40" fill="rgba(196,98,45,0.06)"/><rect x="45" y="30" width="50" height="20" fill="rgba(196,98,45,0.15)"/><rect x="45" y="80" width="40" height="40" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.08)" stroke-width="1"/><rect x="95" y="80" width="40" height="40" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.08)" stroke-width="1"/><rect x="145" y="80" width="20" height="40" fill="rgba(26,23,20,0.05)" stroke="rgba(26,23,20,0.08)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>WordPress</p>
+        <h3 class="card-title" itemprop="name">Harvest Kitchen Restaurant Site</h3>
+        <p class="card-desc" itemprop="description">Farm-to-table restaurant site with online reservations, seasonal menu CMS, and event management system.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Elementor</li><li class="tag">WooCommerce</li></ul>
+      </div>
+    </article>
+    <!-- SHOPIFY -->
+    <article class="card show" data-cat="shopify" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="20" y="15" width="160" height="130" stroke="rgba(26,23,20,0.12)" stroke-width="1.5"/><rect x="20" y="15" width="160" height="24" fill="rgba(26,23,20,0.05)"/><rect x="30" y="50" width="40" height="55" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.2)" stroke-width="1"/><rect x="80" y="50" width="40" height="55" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.2)" stroke-width="1"/><rect x="130" y="50" width="40" height="55" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.2)" stroke-width="1"/><rect x="30" y="118" width="30" height="5" rx="2" fill="rgba(26,23,20,0.1)"/><rect x="80" y="118" width="30" height="5" rx="2" fill="rgba(26,23,20,0.1)"/><rect x="130" y="118" width="30" height="5" rx="2" fill="rgba(26,23,20,0.1)"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Shopify</p>
+        <h3 class="card-title" itemprop="name">Botanica Skincare Store</h3>
+        <p class="card-desc" itemprop="description">Custom Shopify theme for a skincare brand featuring ingredient-focus layouts, subscriptions, and bundle builder.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Custom Theme</li><li class="tag">Subscriptions</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="shopify" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="15" y="20" width="170" height="120" stroke="rgba(26,23,20,0.12)" stroke-width="1.5"/><rect x="15" y="20" width="170" height="50" fill="rgba(196,98,45,0.05)"/><rect x="30" y="35" width="60" height="5" rx="2" fill="rgba(26,23,20,0.15)"/><rect x="30" y="48" width="100" height="4" rx="2" fill="rgba(26,23,20,0.07)"/><rect x="30" y="85" width="45" height="6" rx="2" fill="rgba(26,23,20,0.08)"/><rect x="30" y="98" width="35" height="6" rx="2" fill="rgba(26,23,20,0.05)"/><rect x="110" y="80" width="65" height="45" fill="rgba(196,98,45,0.1)" stroke="rgba(196,98,45,0.25)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Shopify</p>
+        <h3 class="card-title" itemprop="name">Drift Apparel — Fashion Brand</h3>
+        <p class="card-desc" itemprop="description">Full Shopify store build for a streetwear label — custom sections, lookbook, size guide, and metafield-driven pages.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Metafields</li><li class="tag">Lookbook</li><li class="tag">Shopify 2.0</li></ul>
+      </div>
+    </article>
+    <article class="card show" data-cat="shopify" role="listitem" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="card-thumb"><div class="card-thumb-inner"><svg viewBox="0 0 200 160" fill="none" aria-hidden="true"><rect x="60" y="20" width="80" height="100" stroke="rgba(26,23,20,0.15)" stroke-width="1.5" fill="rgba(196,98,45,0.04)"/><rect x="70" y="30" width="60" height="50" fill="rgba(196,98,45,0.08)" stroke="rgba(196,98,45,0.15)" stroke-width="1"/><rect x="70" y="90" width="40" height="5" rx="2" fill="rgba(26,23,20,0.1)"/><rect x="70" y="103" width="30" height="5" rx="2" fill="rgba(26,23,20,0.07)"/><rect x="25" y="50" width="25" height="25" fill="rgba(26,23,20,0.04)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/><rect x="150" y="50" width="25" height="25" fill="rgba(26,23,20,0.04)" stroke="rgba(26,23,20,0.1)" stroke-width="1"/></svg></div><div class="card-thumb-overlay" aria-hidden="true"><span>View Project</span></div></div>
+      <div class="card-body">
+        <p class="card-platform"><span class="card-platform-dot" aria-hidden="true"></span>Shopify</p>
+        <h3 class="card-title" itemprop="name">Solara Home Décor Shop</h3>
+        <p class="card-desc" itemprop="description">Custom sprite-animated Shopify sections, upsell flows, and a fully branded unboxing experience page.</p>
+        <ul class="card-tags" aria-label="Technologies used"><li class="tag">Sprite Animation</li><li class="tag">Custom Sections</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ── About ── -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="about-visual reveal" aria-hidden="true">
+    <div class="about-initials">LR</div>
+    <div class="about-stripe"></div>
+    <div class="about-badge">Available<br>for Projects</div>
+  </div>
+  <div class="about-content">
+    <p class="section-label reveal">About Me</p>
+    <h2 class="section-title reveal reveal-delay-1" id="about-heading">Crafting the web with <em style="font-style:italic;color:var(--terra)">purpose</em></h2>
+    <p class="about-body reveal reveal-delay-2">
+      Hi, I'm Raine — a web designer and developer based in Cebu, Philippines. I build custom websites on WordPress, Webflow, and Shopify that are beautiful, functional, and built to last. My background in Library and Information Science gives me a unique perspective on organizing and presenting information clearly.
+    </p>
+    <p class="about-body reveal reveal-delay-2">
+      Whether you need a marketing site, an e-commerce store, or a custom web application, I bring the same level of care and craftsmanship to every project.
+    </p>
+    <ul class="skills-list reveal reveal-delay-3" aria-label="Skills and services">
+      <li class="skill-item">Webflow Development</li>
+      <li class="skill-item">WordPress &amp; ACF</li>
+      <li class="skill-item">Shopify Liquid</li>
+      <li class="skill-item">Custom Animations</li>
+      <li class="skill-item">CMS Architecture</li>
+      <li class="skill-item">E-Commerce Strategy</li>
+      <li class="skill-item">Figma &amp; UI Design</li>
+      <li class="skill-item">Performance Optimization</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="contact-left">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title" id="contact-heading">Let's build<br>something great.</h2>
+    <p class="contact-sub">Ready to start your next project? Tell me a bit about what you need and I'll get back to you within 24 hours.</p>
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">✉</div>
+      <div class="contact-detail-text">
+        <strong>Email</strong>
+        <!-- SECURITY: Address assembled by JS to prevent bot scraping -->
+        <span id="emailDisplay"></span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">📍</div>
+      <div class="contact-detail-text"><strong>Location</strong>Cebu, Philippines</div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon" aria-hidden="true">⏱</div>
+      <div class="contact-detail-text"><strong>Response Time</strong>Within 24 hours</div>
+    </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="script.js" defer></script>
+  <div class="contact-right">
+    <p class="required-note">Fields marked <abbr title="required">*</abbr> are required.</p>
+    <form
+      class="contact-form" id="contactForm"
+      method="POST"
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      novalidate
+    >
+      <!-- SECURITY: Honeypot trap for bots -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="hp_website">Website (leave blank)</label>
+        <input type="text" id="hp_website" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="_subject" id="emailSubject" value="New project inquiry via workwithraine.com">
 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name <abbr title="required">*</abbr></label>
+          <input type="text" id="fname" name="fname" placeholder="Jane"
+            required minlength="2" maxlength="60" autocomplete="given-name" spellcheck="false">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name <abbr title="required">*</abbr></label>
+          <input type="text" id="lname" name="lname" placeholder="Doe"
+            required minlength="2" maxlength="60" autocomplete="family-name" spellcheck="false">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address <abbr title="required">*</abbr></label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com"
+          required maxlength="254" autocomplete="email" spellcheck="false">
+      </div>
+      <div class="form-group">
+        <label for="platform">Platform Needed <abbr title="required">*</abbr></label>
+        <select id="platform" name="platform" required>
+          <option value="" disabled selected>Select a platform…</option>
+          <option value="Webflow">Webflow</option>
+          <option value="WordPress">WordPress</option>
+          <option value="Shopify">Shopify</option>
+          <option value="Not sure yet">Not sure yet</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Project Details <abbr title="required">*</abbr></label>
+        <textarea id="message" name="message"
+          placeholder="What are you looking to build? Share as many details as you'd like…"
+          required minlength="20" maxlength="2000"
+          aria-describedby="msgCounter"></textarea>
+        <div class="char-counter" id="msgCounter" aria-live="polite">0 / 2000</div>
+      </div>
+      <!-- ACCESSIBILITY: role="alert" so screen readers announce form result -->
+      <div class="form-status" id="formStatus" role="alert" aria-live="assertive"></div>
+      <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+      <p class="privacy-note">
+        Your details are transmitted over HTTPS (TLS-encrypted) and processed securely by <a href="https://formspree.io/security" target="_blank" rel="noopener noreferrer">Formspree</a>. Your information is only used to respond to your inquiry and is never sold or shared with third parties.
+      </p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="logo">raine<span>.</span></div>
+  <p>© <span id="fyear"></span> Raine. All rights reserved.</p>
+  <nav aria-label="Footer navigation">
+    <ul class="footer-links" role="list">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</footer>
+
+<script>
+'use strict';
+
+/* ── Footer year ── */
+document.getElementById('fyear').textContent = new Date().getFullYear();
+
+/* ═══════════════════════════════════════════════════════════
+   SECURITY: Email obfuscation
+   The address is never written plainly in HTML. Bots scraping
+   the source will find nothing. It's built in JS at runtime.
+   ═══════════════════════════════════════════════════════════ */
+(function(){
+  const u = 'workwithraine';
+  const d = 'gmail.com';
+  const addr = u + '\u0040' + d;
+  const el = document.getElementById('emailDisplay');
+  if(el){
+    const a = document.createElement('a');
+    a.href = 'mailto:' + addr;
+    a.textContent = addr;
+    a.style.color = 'inherit';
+    el.appendChild(a);
+  }
+})();
+
+/* ── Custom cursor (fine-pointer desktops only) ── */
+if(window.matchMedia('(pointer: fine)').matches){
+  const dot = document.getElementById('cursorDot')?.firstElementChild;
+  const ring = document.getElementById('cursorRing');
+  if(dot && ring){
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; }, {passive:true});
+    (function animCursor(){
+      dot.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`;
+      rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+      ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;
+      requestAnimationFrame(animCursor);
+    })();
+    document.querySelectorAll('a,button,.card').forEach(el=>{
+      el.addEventListener('mouseenter',()=>ring.classList.add('hover'));
+      el.addEventListener('mouseleave',()=>ring.classList.remove('hover'));
+    });
+  }
+}
+
+/* ── Nav: sticky style on scroll ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', ()=>navbar.classList.toggle('scrolled', window.scrollY>60), {passive:true});
+
+/* ── Nav: mobile hamburger ── */
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+if(navToggle && navMenu){
+  navToggle.addEventListener('click', ()=>{
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+  });
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded','false');
+    navToggle.setAttribute('aria-label','Open navigation menu');
+  }));
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if(e.key==='Escape' && navMenu.classList.contains('open')){
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.focus();
+    }
+  });
+}
+
+/* ══════════════════════════════════════════════════════════
+   PORTFOLIO TABS — WCAG 2.1 compliant tablist pattern
+   Arrow key navigation, aria-selected state management,
+   live region announcement for screen readers.
+   ══════════════════════════════════════════════════════════ */
+const tabs = document.querySelectorAll('.tab-btn');
+const cards = document.querySelectorAll('.card[data-cat]');
+const announcer = document.getElementById('gridAnnouncer');
+
+function filterCards(filter){
+  let shown = 0;
+  cards.forEach(card => {
+    const match = filter==='all' || card.dataset.cat===filter;
+    if(match){
+      card.classList.add('show');
+      card.style.opacity='0';
+      card.style.transform='translateY(16px)';
+      card.style.transition='none';
+      setTimeout(()=>{
+        card.style.transition='opacity 0.4s ease, transform 0.4s ease';
+        card.style.opacity='1';
+        card.style.transform='translateY(0)';
+      }, shown * 55);
+      shown++;
+    } else {
+      card.classList.remove('show');
+    }
+  });
+  if(announcer){
+    const label = filter==='all' ? 'all platforms' : filter;
+    announcer.textContent = `Showing ${shown} ${label} project${shown!==1?'s':''}.`;
+  }
+}
+
+tabs.forEach((tab, idx) => {
+  tab.addEventListener('click', ()=>{
+    tabs.forEach(t=>{ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    filterCards(tab.dataset.tab);
+  });
+  // ACCESSIBILITY: Arrow key navigation within tablist
+  tab.addEventListener('keydown', e => {
+    let newIdx = idx;
+    if(e.key==='ArrowRight') newIdx=(idx+1)%tabs.length;
+    else if(e.key==='ArrowLeft') newIdx=(idx-1+tabs.length)%tabs.length;
+    else if(e.key==='Home') newIdx=0;
+    else if(e.key==='End') newIdx=tabs.length-1;
+    else return;
+    e.preventDefault();
+    tabs[newIdx].focus();
+    tabs[newIdx].click();
+  });
+});
+
+/* ── Scroll reveal ── */
+if('IntersectionObserver' in window){
+  const revObs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revObs.unobserve(e.target); } });
+  }, {threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+  const cardObs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.style.transition='opacity 0.6s ease, transform 0.6s ease';
+        e.target.style.opacity='1'; e.target.style.transform='translateY(0)';
+        cardObs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.07});
+  cards.forEach(c=>{ c.style.opacity='0'; c.style.transform='translateY(20px)'; cardObs.observe(c); });
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+}
+
+/* ── Character counter ── */
+const msgArea = document.getElementById('message');
+const msgCounter = document.getElementById('msgCounter');
+msgArea?.addEventListener('input', ()=>{
+  const len = msgArea.value.length;
+  if(msgCounter) msgCounter.textContent = `${len} / 2000`;
+  if(msgCounter) msgCounter.style.color = len>1800 ? '#e07070' : 'rgba(245,240,232,0.35)';
+});
+
+/* ══════════════════════════════════════════════════════════
+   CONTACT FORM — Security layers:
+   1. Honeypot field traps bots
+   2. Client-side rate limiting (30s cooldown)
+   3. Input sanitisation (strips HTML/control chars)
+   4. Strict email format validation
+   5. Field length enforcement
+   6. Submission via Formspree HTTPS API
+      (data encrypted in transit via TLS)
+   7. textContent used for all DOM writes (no innerHTML XSS)
+   8. Error messages from server sanitised before display
+   ══════════════════════════════════════════════════════════ */
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formStatus = document.getElementById('formStatus');
+
+function sanitise(str){
+  return String(str).replace(/<[^>]*>/g,'').replace(/[\u0000-\u001F\u007F]/g,'').trim();
+}
+function isValidEmail(email){
+  return /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(email) && email.length<=254;
+}
+function showStatus(msg, type){
+  if(!formStatus) return;
+  formStatus.textContent = sanitise(msg); // SECURITY: never innerHTML
+  formStatus.className = 'form-status ' + type;
+  formStatus.style.display = 'block';
+  formStatus.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+let lastSubmit = 0;
+const COOLDOWN = 30000;
+
+form?.addEventListener('submit', async e => {
+  e.preventDefault();
+
+  /* Rate limit */
+  const now = Date.now();
+  if(now - lastSubmit < COOLDOWN){
+    const wait = Math.ceil((COOLDOWN-(now-lastSubmit))/1000);
+    showStatus(`Please wait ${wait} seconds before submitting again.`, 'error');
+    return;
+  }
+
+  /* Honeypot check */
+  const hp = form.querySelector('[name="_gotcha"]');
+  if(hp && hp.value.trim() !== ''){
+    showStatus('Thank you! Your message has been sent.', 'success');
+    form.reset(); return;
+  }
+
+  /* Collect + sanitise */
+  const fname    = sanitise(form.fname.value);
+  const lname    = sanitise(form.lname.value);
+  const email    = sanitise(form.email.value);
+  const platform = sanitise(form.platform.value);
+  const message  = sanitise(form.message.value);
+
+  /* Validate */
+  const errors = [];
+  if(fname.length < 2)     errors.push(['fname','Please enter your first name (at least 2 characters).']);
+  if(lname.length < 2)     errors.push(['lname','Please enter your last name (at least 2 characters).']);
+  if(!isValidEmail(email)) errors.push(['email','Please enter a valid email address.']);
+  if(!platform)            errors.push(['platform','Please select a platform.']);
+  if(message.length < 20)  errors.push(['message','Please describe your project (at least 20 characters).']);
+
+  if(errors.length > 0){
+    const [firstField, firstMsg] = errors[0];
+    showStatus(firstMsg, 'error');
+    form.querySelector(`[name="${firstField}"]`)?.focus();
+    form.querySelector(`[name="${firstField}"]`)?.setAttribute('aria-invalid','true');
+    return;
+  }
+
+  /* Reset invalid states */
+  form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));
+
+  /* Update subject */
+  const subjectEl = document.getElementById('emailSubject');
+  if(subjectEl) subjectEl.value = `New inquiry from ${fname} ${lname} — ${platform}`;
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+  formStatus.style.display = 'none';
+
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fname, lname, email, platform, message, _replyto: email }),
+    });
+
+    if(res.ok){
+      lastSubmit = Date.now();
+      showStatus('✓ Message sent! I\'ll get back to you within 24 hours.', 'success');
+      form.reset();
+      if(msgCounter) msgCounter.textContent = '0 / 2000';
+    } else {
+      const data = await res.json().catch(()=>({}));
+      const serverMsg = data?.errors?.[0]?.message || 'Something went wrong. Please try again.';
+      showStatus(serverMsg, 'error'); // sanitised by showStatus before display
+    }
+  } catch {
+    showStatus('Network error. Please check your connection, or email me directly.', 'error');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+  }
+});
+</script>
 </body>
 </html>
